@@ -18,12 +18,12 @@ export class FormularioReactivo {
   });
 
   handleSubmit() {
-    if(this.profileForm.valid){
-      this.correos.push(this.profileForm.value.email);
-    }
-    //alert(
-    //  this.profileForm.value.email
-    //);
+    //if(this.profileForm.valid){
+    //  this.correos.push(this.profileForm.value.email);
+    //}
+    alert(
+      this.profileForm.value.email
+    );
     //correo = this.profileForm.value.email;
     
   }
