@@ -1,0 +1,6 @@
+<form (ngSubmit)="enviar()" #miform="ngForm">
+    <label>Name:
+        <input name="name" type="text" required [(ngModel)]="name">
+    </label>
+    <button type="submit" [disabled]="miform.invalid" value="Enviar">Enviar</button>
+</form>
