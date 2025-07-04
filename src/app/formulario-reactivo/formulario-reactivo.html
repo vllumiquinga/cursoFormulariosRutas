@@ -1,1 +1,9 @@
-<p>formulario-reactivo works!</p>
+<form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+  <label>
+    Email
+    <input type="email" formControlName="email" />
+  </label>  
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
+<h2>Profile Form</h2>
+<p>Email: {{ profileForm.value.email }}</p>
