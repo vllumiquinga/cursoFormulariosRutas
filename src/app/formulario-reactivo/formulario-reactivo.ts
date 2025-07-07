@@ -21,7 +21,6 @@ export class FormularioReactivo {
     if (this.profileForm.valid) {
       this.correos.push(this.profileForm.value['email']!);
     }
-
   }
 
 }
