@@ -7,3 +7,9 @@
 </form>
 <h2>Profile Form</h2>
 <p>Email: {{ profileForm.value.email }}</p>
+
+@for(correo of correos;track $index){
+<p>{{correo}}</p>
+}
+
+

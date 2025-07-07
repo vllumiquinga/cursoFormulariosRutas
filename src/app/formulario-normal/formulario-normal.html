@@ -4,3 +4,6 @@
     </label>
     <button type="submit" [disabled]="miform.invalid" value="Enviar">Enviar</button>
 </form>
+@for(correo of names;track $index){
+<p>{{correo}}</p>
+}
