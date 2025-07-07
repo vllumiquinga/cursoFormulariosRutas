@@ -9,6 +9,9 @@ Argument of type 'string | null | undefined' is not assignable to parameter of t
 ```
 Si sale este error hay que aumentar una admiración al final para evitar que el compilador verifique si va hacer nulo.  
 
+```bash
+this.profileForm.value['email']!
+```
 
 ## Development server
 
